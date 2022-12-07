@@ -7,6 +7,7 @@ background: rgba(0,0,0,0.4);
     background-repeat: no-repeat;
     
     background-blend-mode: darken;
+    background-attachment: fixed;
     
     
 }
