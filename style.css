@@ -1,21 +1,53 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
 .body{
-    background: linear-gradient(to right, #ff00cc, #333399);
-
+    height: 200vh;
+background: rgba(0,0,0,0.4);
+    background-image: url(img/anime.jpg);
+    background-repeat: no-repeat;
+    
+    background-blend-mode: darken;
+    
+    
 }
 .Nome{
     color: white;
     font-family: Zen Dots;
     padding: 10px;
     text-align: center;
+    text-shadow: 2px 2px blue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
-.Profile_Picture{
+/*.Profile_Picture{
         display:flex;
         margin: auto;
         justify-content:right ;
         border-radius: 25px;
         width: 250px;
         padding: 10px;
+    }*/
+
+    #img{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    #img >img{
+        width: 60px;
+        margin-bottom: 20px;
+        animation: jumping 1s linear infinite;
+        cursor:pointer ;
+    }
+
+    @keyframes jumping {
+        from {transform:translateY(-15%);}
+        50%{transform: translateY(0);}
+        to{transform: translateY(-15px);}
+        
     }
